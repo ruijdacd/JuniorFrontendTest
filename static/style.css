@@ -28,8 +28,9 @@ body {
   justify-content: center; }
 
 .box {
-  width: 400px;
+  max-width: 400px;
   padding: 15px 30px;
+  margin: 30px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 10px 20px 30px 0 rgba(0, 0, 0, 0.3); }
@@ -54,6 +55,7 @@ body {
       border-radius: 3px;
       background-color: #f5f5f5;
       box-shadow: none;
+      transition: 0.3s all ease;
       font-size: 14px; }
       .box .form-container button:hover {
         background-color: #eee; }
@@ -61,6 +63,14 @@ body {
         color: #000; }
   .box .data-container .user-info {
     overflow: hidden; }
+    .box .data-container .user-info .error {
+      color: #d9534f;
+      background-color: rgba(217, 83, 79, 0.25);
+      border: 1px solid rgba(217, 83, 79, 0.5);
+      border-radius: 3px;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 15px; }
     .box .data-container .user-info img {
       float: left;
       width: 70px;
@@ -75,8 +85,12 @@ body {
       text-decoration: none;
       text-transform: lowercase;
       color: inherit;
+      opacity: 0.5;
       font-size: 14px;
-      font-style: italic; }
+      font-style: italic;
+      transition: 0.3s all ease; }
+      .box .data-container .user-info .username:hover {
+        opacity: 1; }
     .box .data-container .user-info .full-name {
       font-size: 24px;
       font-weight: 600; }
@@ -100,6 +114,7 @@ body {
       overflow: hidden;
       padding: 10px;
       text-decoration: none;
+      transition: 0.3s all ease;
       color: inherit; }
       .box .data-container .repos-info ul.repo-list li a:hover {
         background-color: #f5f5f5; }

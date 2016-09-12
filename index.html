@@ -34,7 +34,7 @@
                 userOutput = "";
 
             if (info.message == "Not Found") {
-                userOutput += 'Does not exist';
+                userOutput += '<p class="error">Does not exist</p>';
                 repos_container.innerHTML = '';
             } else {
                 userOutput += '<img src="'+info.avatar_url+'">';
